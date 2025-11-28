@@ -71,11 +71,11 @@ wget https://raw.githubusercontent.com/JoergR75/rocm-7.1.1-pytorch-2.10.0-docker
 
 ### 3️⃣ **Run the Installer**
 ```bash
-bash script_module_ROCm_702_Ubuntu_22.04-24.04_pytorch_2.10.0_server.sh
+bash script_module_ROCm_711_Ubuntu_22.04-24.04_pytorch_2.10.0_server.sh
 ```
 **⚠️ Note**: Entering the user password may be required.
 
-<img width="800" height="508" alt="{80D0F6B6-D2F2-4693-9CC7-D727C649BE40}" src="https://github.com/user-attachments/assets/24c29e5c-ec1b-494b-bc3d-6bc7e96313bd" />
+<img width="908" height="418" alt="{FC933549-11D1-4CF2-8FD6-2A683E038546}" src="https://github.com/user-attachments/assets/fa2abca8-8441-42d0-ab9a-aab15bf14c07" />
 
 The installation takes ~15 minutes depending on internet speed and hardware performance.
 
