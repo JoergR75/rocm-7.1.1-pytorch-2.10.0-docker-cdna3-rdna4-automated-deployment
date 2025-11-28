@@ -106,7 +106,14 @@ python3 test.py
 ```
 Expected Output Example:
 
-<img width="779" height="294" alt="{2BFF554C-D825-4E01-9B18-8CA52A59D97F}" src="https://github.com/user-attachments/assets/9bfdb5bb-40c2-4305-b66a-902efcd6c8c8" />
+<img width="883" height="292" alt="{06D61B7B-36D4-4611-838E-36D1D9A1D2C1}" src="https://github.com/user-attachments/assets/b9f75b18-e1c3-416f-85e1-336be812cf87" />
+
+More details about the ROCm driver version can be reviewed:
+```bash
+apt show rocm-libs -a
+```
+
+<img width="898" height="527" alt="{8CE38CD7-EA93-44A4-8778-C1EE06F19243}" src="https://github.com/user-attachments/assets/5396ce18-93d4-40cf-9025-173d8c04d4fe" />
 
 ## 📶 ROCm Bandwidth Test
 
