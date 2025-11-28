@@ -115,54 +115,6 @@ apt show rocm-libs -a
 
 <img width="898" height="527" alt="{8CE38CD7-EA93-44A4-8778-C1EE06F19243}" src="https://github.com/user-attachments/assets/5396ce18-93d4-40cf-9025-173d8c04d4fe" />
 
-## 📶 ROCm Bandwidth Test
-
-**AMD’s ROCm Bandwidth Test utility** with the **`-a` (all tests)** flag runs a complete set of bandwidth diagnostics.
-
-### What it does
-
-`rocm-bandwidth-test` is a diagnostic tool included in ROCm that measures **memory bandwidth performance** between:
-
-- Host (CPU) ↔ GPU(s)  
-- GPU ↔ GPU (if multiple GPUs are installed)  
-- GPU internal memory  
-
-### `-a` (all tests) option
-
-Using the `-a` flag runs **all available tests**, including:
-
-- **Host-to-Device (H2D)** bandwidth  
-- **Device-to-Host (D2H)** bandwidth  
-- **Device-to-Device (D2D)** bandwidth (for multi-GPU)  
-- **Bidirectional / concurrent** bandwidth tests  
-
-Run the P2P test
-```bash
-sudo /opt/rocm/bin/rocm-bandwidth-test -a
-```
-
-### Output
-
-The tool prints results in a **matrix format** showing bandwidth (GB/s) between every device pair.
-
-<img width="646" height="663" alt="{51926F23-C527-4447-89E4-69A64A4CB02C}" src="https://github.com/user-attachments/assets/1799223f-a123-41e9-9f87-d4ddf5f9266a" />
-
-⚠️ **Caution:**  
-Make sure **"Resize BAR"** is enabled in the **SBIOS**.  
-If it is disabled, **P2P** will be deactivated, as shown below:
-
-<img width="634" height="654" alt="{C8894609-B944-443A-9A1B-D183F18E9C28}" src="https://github.com/user-attachments/assets/de3ab31b-6946-4770-8798-a9e820ce0c1b" />
-
-### ⚙️ How to Enable **Resize BAR** in SBIOS
-
-1. Enter **SBIOS**  
-2. Navigate to **Advanced**  
-3. Go to **PCI Subsystem Settings**
-
-<img width="357" height="203" alt="image" src="https://github.com/user-attachments/assets/0f1d7c5f-5433-4c5e-afd8-72158c603482" />
-=>
-<img width="492" height="150" alt="image" src="https://github.com/user-attachments/assets/4261936a-d983-481a-8129-9f9bd1f8a0a4" />
-
 ## 🐋 Docker Integration
 
 The script sets up a Docker environment with GPU passthrough support via ROCm.
@@ -221,3 +173,51 @@ sudo docker run -it \
 GPU2 has been added to the container
 
 <img width="933" height="305" alt="{988A3311-56B1-4BDB-95A6-DF00A4D2BE6D}" src="https://github.com/user-attachments/assets/b630ad80-b163-453a-be29-b03c346aae8b" />
+
+## 📶 ROCm Bandwidth Test
+
+**AMD’s ROCm Bandwidth Test utility** with the **`-a` (all tests)** flag runs a complete set of bandwidth diagnostics.
+
+### What it does
+
+`rocm-bandwidth-test` is a diagnostic tool included in ROCm that measures **memory bandwidth performance** between:
+
+- Host (CPU) ↔ GPU(s)  
+- GPU ↔ GPU (if multiple GPUs are installed)  
+- GPU internal memory  
+
+### `-a` (all tests) option
+
+Using the `-a` flag runs **all available tests**, including:
+
+- **Host-to-Device (H2D)** bandwidth  
+- **Device-to-Host (D2H)** bandwidth  
+- **Device-to-Device (D2D)** bandwidth (for multi-GPU)  
+- **Bidirectional / concurrent** bandwidth tests  
+
+Run the P2P test
+```bash
+sudo /opt/rocm/bin/rocm-bandwidth-test -a
+```
+
+### Output
+
+The tool prints results in a **matrix format** showing bandwidth (GB/s) between every device pair.
+
+<img width="646" height="663" alt="{51926F23-C527-4447-89E4-69A64A4CB02C}" src="https://github.com/user-attachments/assets/1799223f-a123-41e9-9f87-d4ddf5f9266a" />
+
+⚠️ **Caution:**  
+Make sure **"Resize BAR"** is enabled in the **SBIOS**.  
+If it is disabled, **P2P** will be deactivated, as shown below:
+
+<img width="634" height="654" alt="{C8894609-B944-443A-9A1B-D183F18E9C28}" src="https://github.com/user-attachments/assets/de3ab31b-6946-4770-8798-a9e820ce0c1b" />
+
+### ⚙️ How to Enable **Resize BAR** in SBIOS
+
+1. Enter **SBIOS**  
+2. Navigate to **Advanced**  
+3. Go to **PCI Subsystem Settings**
+
+<img width="357" height="203" alt="image" src="https://github.com/user-attachments/assets/0f1d7c5f-5433-4c5e-afd8-72158c603482" />
+=>
+<img width="492" height="150" alt="image" src="https://github.com/user-attachments/assets/4261936a-d983-481a-8129-9f9bd1f8a0a4" />
