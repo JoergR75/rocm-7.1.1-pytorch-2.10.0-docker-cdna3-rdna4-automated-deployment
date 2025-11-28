@@ -25,7 +25,7 @@ If an existing ROCm installation is detected, it removes ROCm and related packag
 | **OS**            | Ubuntu 22.04.x (Jammy Jellyfish), Ubuntu 24.04.x (Noble Numbat) |
 | **Kernels** tested       | 5.15.0-160 (22.04.5) • 6.8.0-88 (24.04.3)                       |
 | **GPUs**          | AMD **CDNA2** • **CDNA3** • **RDNA3** • **RDNA4**                 |
-| **Docker**        | 29.0.2 (stable)                                       |
+| **Docker**        | 29.1.0 (stable)                                       |
 | **ROCm**          | 7.1.1                                                |
 | **PyTorch**       | torch 2.10.0.dev20251027+rocm7.0, torchvision 0.25.0.dev20251028+rocm7.0                            |
 | **Transformers**  | 4.57.3                                               |
@@ -164,7 +164,7 @@ Check Docker Installation
 ```bash
 docker --version
 ```
-<img width="681" height="63" alt="{402A8436-9377-42B3-B1A9-EEEF02B21C7B}" src="https://github.com/user-attachments/assets/9a0ffaa2-5236-4a7d-86bb-be2c50a5925a" />
+<img width="896" height="62" alt="{A01686FA-B579-4D64-91BB-147D5A2563F3}" src="https://github.com/user-attachments/assets/3f24a8c1-7a1d-435f-94a4-de8a9b9d3fb4" />
 
 ### 🤖 vLLM Docker Images
 
