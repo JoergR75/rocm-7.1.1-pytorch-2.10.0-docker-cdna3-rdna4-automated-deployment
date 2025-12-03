@@ -218,7 +218,7 @@ sudo /opt/rocm/bin/rocm_bandwidth_test plugin --run tb
 <img width="861" height="275" alt="{4103D9C7-2ECE-42CF-A231-DC1D7004C7BF}" src="https://github.com/user-attachments/assets/e0a1efaf-9c5c-4c6c-b2d9-8ff14cf1b623" />
 
 ⚠️ **Caution:**  
-Make sure **"Resize BAR"** is enabled in the **SBIOS**.  
+Make sure **"Re-Size BAR"** is enabled in the **SBIOS**.  
 If it is disabled, **P2P** will be deactivated, as shown below:
 
 <img width="977" height="777" alt="{FD9B95A3-BEFA-4857-8BBB-8D06A90108F2}" src="https://github.com/user-attachments/assets/cc148322-45b3-4164-b215-521276749f9d" />
