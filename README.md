@@ -210,6 +210,13 @@ The tool prints results in a **matrix format** showing bandwidth (GB/s) between 
 
 <img width="983" height="1179" alt="{6EAC522F-550D-4881-9C78-11B3A90A555D}" src="https://github.com/user-attachments/assets/039f0f87-79b8-4dd0-856b-d959025b27a4" />
 
+More details about the setup can be verified by
+```bash
+sudo /opt/rocm/bin/rocm_bandwidth_test plugin --run tb
+```
+
+<img width="861" height="275" alt="{4103D9C7-2ECE-42CF-A231-DC1D7004C7BF}" src="https://github.com/user-attachments/assets/e0a1efaf-9c5c-4c6c-b2d9-8ff14cf1b623" />
+
 ⚠️ **Caution:**  
 Make sure **"Resize BAR"** is enabled in the **SBIOS**.  
 If it is disabled, **P2P** will be deactivated, as shown below:
