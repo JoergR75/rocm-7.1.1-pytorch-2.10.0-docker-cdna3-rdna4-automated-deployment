@@ -232,10 +232,15 @@ sudo /opt/rocm/bin/rocm_bandwidth_test plugin --run tb
 
 ### ⚙️ How to Enable **Resize BAR** in SBIOS (example ASRock WRX90 evo)
 
-1. Enter **SBIOS**  
-2. Navigate to **Advanced**  
-3. Go to **PCI Subsystem Settings**
+1. Enter **SBIOS** by pressing "DEL"
 
-<img width="357" height="203" alt="image" src="https://github.com/user-attachments/assets/0f1d7c5f-5433-4c5e-afd8-72158c603482" />
-=>
-<img width="492" height="150" alt="image" src="https://github.com/user-attachments/assets/4261936a-d983-481a-8129-9f9bd1f8a0a4" />
+<img width="1007" height="760" alt="{F9649127-0F1F-4E14-8008-1F3782FBBDEF}" src="https://github.com/user-attachments/assets/9685c1a4-ecab-4fea-8e91-dd21b9869c7e" />
+
+3. Navigate to **Advanced**
+
+<img width="1018" height="761" alt="{135D3B4C-0732-4652-A3C0-1224D275A515}" src="https://github.com/user-attachments/assets/b1cdc3ce-b526-4cdc-b44f-71d1119cf6d7" />
+
+5. Go to **PCI Subsystem Settings**
+
+<img width="1016" height="761" alt="{3C54C3DA-8B82-483C-AEA5-D0A511508780}" src="https://github.com/user-attachments/assets/60536e2b-e59f-4486-a1fc-ab3ff33a3cd8" />
+
