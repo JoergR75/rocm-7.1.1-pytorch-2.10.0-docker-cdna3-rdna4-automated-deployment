@@ -369,6 +369,7 @@ printf "\nAfter the reboot, test your installation with:\n"
 printf "  • rocminfo\n"
 printf "  • clinfo\n"
 printf "  • rocm-smi\n"
+printf "  • amd-smi\n"
 
 # PyTorch verification
 printf "\nVerify the active PyTorch device:\n"
