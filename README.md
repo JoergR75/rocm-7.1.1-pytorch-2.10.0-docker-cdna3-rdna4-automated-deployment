@@ -190,7 +190,7 @@ GPU2 has been added to the container
 - GPU ↔ GPU (if multiple GPUs are installed)  
 - GPU internal memory  
 
-### `-a` (all tests) option
+### `tb p2p` option
 
 Using the `--run tb p2p` flag runs **Peer-to-peer device memory bandwidth test**, including:
 
