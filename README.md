@@ -131,7 +131,7 @@ To use vLLM optimized for RDNA4 and CDNA3:
 Use the container image you need.
 ```bash
 # RDNA4 build
-sudo docker pull rocm/vllm-dev:open-r9700-08052025
+sudo docker pull rocm/vllm-dev:rocm7.1.1_navi_ubuntu24.04_py3.12_pytorch_2.8_vllm_0.10.2rc1
 ```
 
 <img width="799" height="529" alt="{CFEDF465-C100-4945-9A40-907B2A225402}" src="https://github.com/user-attachments/assets/45d71292-4bc1-4d3f-afc7-8dc2611d0b38" />
