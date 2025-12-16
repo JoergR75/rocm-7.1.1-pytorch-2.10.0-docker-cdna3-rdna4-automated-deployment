@@ -175,7 +175,7 @@ sudo docker run -it \
     --device=/dev/dri/renderD129 \
     --security-opt seccomp=unconfined \
     --group-add video \
-    rocm/vllm-dev:open-r9700-08052025
+    rocm/vllm-dev:rocm7.1.1_navi_ubuntu24.04_py3.12_pytorch_2.8_vllm_0.10.2rc1
 ```
 GPU2 has been added to the container
 
