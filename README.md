@@ -82,7 +82,7 @@ The installation takes ~15 minutes depending on internet speed and hardware perf
 ### 4️⃣ **Reboot the System**
 After the successful installation, press "y" to reboot the system and activate all installed components.
 
-<img width="901" height="562" alt="{01FB8878-B0B9-4DEB-B1E4-F6315E3D0D5F}" src="https://github.com/user-attachments/assets/f34408c0-1738-4941-ba95-a68b95558d70" />
+<img width="1310" height="478" alt="{D5454DCC-E86E-4DF4-806C-C95A2BD4BE67}" src="https://github.com/user-attachments/assets/94aa97e7-6459-458c-b847-621fa400f83a" />
 
 ## 🧪 Testing ROCm + PyTorch
 
