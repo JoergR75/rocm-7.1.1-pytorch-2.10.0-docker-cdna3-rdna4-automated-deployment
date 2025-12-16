@@ -152,7 +152,7 @@ sudo docker run -it \
     --device=/dev/dri \
     --security-opt seccomp=unconfined \
     --group-add video \
-    rocm/vllm-dev:open-r9700-08052025
+    rocm/vllm-dev:rocm7.1.1_navi_ubuntu24.04_py3.12_pytorch_2.8_vllm_0.10.2rc1
 ```
 With `rocm-smi`, you can verify all available GPUs (in this case, 2× Radeon AI PRO R9700 GPUs).
 
