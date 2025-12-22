@@ -17,7 +17,7 @@
 #
 # Kernel Versions Tested:
 #   - Ubuntu 22.04.5: 5.15.0-160
-#   - Ubuntu 24.04.3: 6.8.0-88
+#   - Ubuntu 24.04.3: 6.8.0-90
 #
 # Supported Hardware:
 #   - AMD CDNA2 | CDNA3 | RDNA3 | RDNA4 GPU Architectures | Strix APU
@@ -30,7 +30,7 @@
 #
 # PyTorch:               2.11.0.dev20251221+rocm7.1
 # Transformers:          4.57.3
-# Docker:                min. 28.5.0 (the script will verify and skip installation if minimum requirements are installed)
+# Docker:                min. 29.0.0 (the script will verify and skip installation if minimum requirements are installed)
 #
 # INCLUDED TOOLS:
 # ---------------------------------------------------------------------------------------------------------------
