@@ -69,7 +69,7 @@ Install **Ubuntu 22.04.5 LTS** or **Ubuntu 24.04.3 LTS** (Server or Desktop vers
 wget https://raw.githubusercontent.com/JoergR75/rocm-7.1.1-pytorch-2.11.0-docker-cdna3-rdna4-automated-deployment/refs/heads/main/script_module_ROCm_711_Ubuntu_22.04-24.04_pytorch_2.11.0_server.sh
 ```
 
-<img width="1312" height="276" alt="{8E7B3DBE-7199-464D-9910-F8BCDAD79566}" src="https://github.com/user-attachments/assets/5b8e5ebd-4696-4db4-addf-ec8ae7d95439" />
+<img width="1108" height="291" alt="{261EC7C8-9101-4977-8098-E6916CFB6E62}" src="https://github.com/user-attachments/assets/74993750-df4f-412e-9b95-5ed62ef6e3ba" />
 
 ### 3️⃣ **Run the Installer**
 ```bash
