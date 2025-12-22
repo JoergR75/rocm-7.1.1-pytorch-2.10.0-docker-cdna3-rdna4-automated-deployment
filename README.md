@@ -10,7 +10,7 @@ The script provisions a fully automated, non-interactive AMD GPU software develo
 
 At the platform layer, it installs the AMD GPU kernel driver (**amdgpu-dkms**) and the ROCm 7.1.1 runtime, including **HIP** and **OpenCL 2.x**, ensuring compatibility across **CDNA2**, **CDNA3**, **RDNA3**, **RDNA4** GPUs and **Strix APUs**. The script configures **OpenCL ICD** paths, user group permissions (video, render, sudo), and kernel headers required for compiling GPU-accelerated native extensions.
 
-For the AI framework layer, the script installs **PyTorch 2.10.0 nightly** (ROCm 7.1 wheels) directly from the official PyTorch ROCm nightly repository, enabling access to the latest HIP backends, kernel fusion paths, and compiler features. It complements PyTorch with Transformers, Accelerate, Diffusers, Datasets, SentencePiece, and supporting Python build tooling, allowing immediate development, testing, and profiling of modern LLM, diffusion, and data-parallel workloads.
+For the AI framework layer, the script installs **PyTorch 2.10.0 nightly** (**ROCm 7.1 wheels**) directly from the official PyTorch ROCm nightly repository, enabling access to the latest HIP backends, kernel fusion paths, and compiler features. It complements PyTorch with Transformers, Accelerate, Diffusers, Datasets, SentencePiece, and supporting Python build tooling, allowing immediate development, testing, and profiling of modern LLM, diffusion, and data-parallel workloads.
 
 The developer toolchain is rounded out with C/C++ build and system utilities required for low-level GPU software engineering and extension development, including **cmake**, **libstdc++ dev headers**, **git** / **git-lfs**, **libmsgpack**, and **rocm-bandwidth-test** for validating PCIe and HBM bandwidth. Runtime observability and system inspection are supported via htop, ncdu, and ROCm diagnostics (rocminfo, rocm-smi, amd-smi).
 
@@ -28,10 +28,9 @@ If an existing ROCm installation is detected, it removes ROCm and related packag
 | **OS**            | Ubuntu 22.04.x (Jammy Jellyfish), Ubuntu 24.04.x (Noble Numbat) |
 | **Kernels** tested       | 5.15.0-160 (22.04.5) • 6.8.0-88 (24.04.3)                       |
 | **GPUs**          | AMD **CDNA2** • **CDNA3** • **RDNA3** • **RDNA4** • **Strix APU**                 |
-| **Docker**        | 29.1.0 (stable)                                       |
+| **APUs**        | **Strix** • **Strix Halo**                                       |
 | **ROCm**          | 7.1.1                                                |
-| **PyTorch**       | torch 2.10.0.dev20251027+rocm7.0, torchvision 0.25.0.dev20251028+rocm7.0                            |
-| **Transformers**  | 4.57.3                                               |
+| **PyTorch**       | torch 2.10.0.dev20251027+rocm7.0, torchvision 0.25.0.dev20251028+rocm7.0                            |                                               |
 
 **⚠️ Note**: **Ubuntu 20.04.x (Focal Fossa)** is **not supported**. The last compatible ROCm version for 20.04 is **6.4.0**.
 
