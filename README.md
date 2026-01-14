@@ -122,7 +122,7 @@ apt show rocm-libs -a
 ROCm provides basic power and performance management controls via `rocm-smi`.  
 For RDNA and CDNA, predefined performance profiles can be used to balance power efficiency and maximum performance.
 
-Using the following command:
+Using the following command to verify teh active power profile:
 
 ```bash
 rocm-smi --showprofile
