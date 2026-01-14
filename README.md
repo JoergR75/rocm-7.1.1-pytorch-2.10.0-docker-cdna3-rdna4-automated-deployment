@@ -117,6 +117,17 @@ apt show rocm-libs -a
 
 <img width="898" height="527" alt="{8CE38CD7-EA93-44A4-8778-C1EE06F19243}" src="https://github.com/user-attachments/assets/5396ce18-93d4-40cf-9025-173d8c04d4fe" />
 
+## 📶 Setting the right Power Management with `rocm-smi`
+
+ROCm provides basic power and performance management controls via `rocm-smi`.  
+For RDNA and CDNA, predefined performance profiles can be used to balance power efficiency and maximum performance.
+
+Using the following command:
+
+```bash
+rocm-smi --showprofile
+```
+
 ## 📶 ROCm Bandwidth Test
 
 **AMD’s ROCm Bandwidth Test utility** with the **`tb p2p` (Peer-to-peer device memory bandwidth test)** flag runs a complete set of bandwidth diagnostics.
