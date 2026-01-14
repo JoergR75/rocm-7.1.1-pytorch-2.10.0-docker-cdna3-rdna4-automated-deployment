@@ -127,7 +127,7 @@ For RDNA and CDNA GPUs, predefined performance profiles can be used to balance *
 - **VR** – Ensures minimum performance requirements are met without consuming more power than necessary.
 - **Video** – Historically tuned to minimize power for video playback, but recent profiles optimize **VCN performance** for encoding and transcoding workloads.
 
-Use the following command to verify teh active power profile:
+Use the following command to verify the active power profile:
 
 ```bash
 rocm-smi --showprofile
