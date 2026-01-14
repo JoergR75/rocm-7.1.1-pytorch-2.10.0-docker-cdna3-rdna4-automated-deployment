@@ -120,9 +120,14 @@ apt show rocm-libs -a
 ## ⏻ Setting the right Power Management with `rocm-smi`
 
 ROCm provides basic power and performance management controls via `rocm-smi`.  
-For RDNA and CDNA, predefined performance profiles can be used to balance power efficiency and maximum performance.
+For RDNA and CDNA GPUs, predefined performance profiles can be used to balance **power efficiency** and **maximum performance**:
 
-Using the following command to verify teh active power profile:
+- **Compute** – Optimized for latency-sensitive and “bursty” workloads. It avoids electrical or thermal overshoots that can occur when multiple WGPs are activated simultaneously.
+- **3D Full Screen** – Designed for gaming with “inverted bathtub” activity profiles.
+- **VR** – Ensures minimum performance requirements are met without consuming more power than necessary.
+- **Video** – Historically tuned to minimize power for video playback, but recent profiles optimize **VCN performance** for encoding and transcoding workloads.
+
+Use the following command to verify teh active power profile:
 
 ```bash
 rocm-smi --showprofile
